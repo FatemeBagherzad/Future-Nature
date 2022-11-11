@@ -1,0 +1,271 @@
+/* rem and em do NOT depend on html font-size in media queries.
+instead, 1rem=1em=16px */
+
+/* we start decreasing window size to reach the point that every 
+thing start looks bad and then set media from that point.
+for example if it is 1366px then we devide it to 16px:
+1366/16px=84.375  = 84
+then set @media (max-width:84em){}
+*/
+
+/**************************************/
+/* BELOW 1000px (Smaller desktops) */
+/**************************************/
+
+@media (max-width: 62rem) {
+  /* ********************Hero**************** */
+  .Header {
+    margin-bottom: 6rem;
+  }
+
+  .NavList {
+    font-size: 1.8rem;
+    gap: 2rem;
+  }
+  .Btn {
+    font-size: 1.8rem;
+    padding: 0.6rem;
+    margin-left: 2rem;
+  }
+  .HeroTxtheader {
+    font-size: 4.8rem;
+  }
+  .HeroTxtLink {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.4rem 3rem;
+  }
+  .HeroTxt {
+    row-gap: 1rem;
+  }
+
+  /* ********************companies**************** */
+  .CompaniesHeader {
+    font-size: 1.8rem;
+  }
+  .companyLogo {
+    height: 2.4rem;
+  }
+  .CompaniesLogos {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+  }
+
+  /* ********************Disaster**************** */
+  .Disaster {
+    margin: 8rem auto;
+  }
+  .DisasterHeader {
+    font-size: 2.8rem;
+  }
+  .DisasterParagraph {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  .DisasterBtn {
+    font-size: 2.2rem;
+    padding: 1.4rem 3rem;
+  }
+
+  /* ******************PeopleSolution**************** */
+  .PeopleSolution {
+    margin: 12rem auto;
+  }
+  .PeopleSolutionFigures {
+    grid-template-columns: 1fr 1fr;
+  }
+  #FigureDispaly3 {
+    display: none;
+  }
+  .PeopleSolutionHeader {
+    font-size: 3rem;
+  }
+  .PeopleImg {
+    height: 9rem;
+  }
+  .PeopleSolutionLi {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .PeopleSolutionBtn {
+    font-size: 2.2rem;
+    padding: 1.5rem 3rem;
+  }
+  /* ******************Footer**************** */
+  .Footer {
+    font-size: 1.4rem;
+  }
+  .Cta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************************************/
+/* BELOW 850px (Landscape Tablets) */
+/**************************************/
+@media (max-width: 53rem) {
+  html {
+    font-size: 50%;
+  }
+  .CtaForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+  }
+  .FullName {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .Email {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .Ideas {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .FormBtn {
+    grid-column: 1;
+    grid-row: 4;
+    color: #a4e8e0;
+    background-color: #0a5048;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    margin: auto auto;
+  }
+}
+
+/*******************************************/
+/* BELOW 700px (Phones & Smaller tablets) */
+/*******************************************/
+@media (max-width: 43rem) {
+  html {
+    font-size: 45%;
+  }
+  /* ********************Hero**************** */
+  #dropdownPart {
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+  }
+
+  .NavList {
+    position: absolute;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    color: #214250;
+    font-size: 2.4rem;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .HeroTxt {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 15rem 6rem 12rem;
+    column-gap: 0;
+    row-gap: 4rem;
+  }
+  .HeroTxtheader {
+    font-size: 4.5rem;
+  }
+
+  /* ********************companies**************** */
+
+  .CompaniesHeader {
+    display: none;
+  }
+  .CompaniesLogos {
+    align-items: center;
+    justify-items: space-between;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+  .Companies {
+    margin: 4rem auto;
+    display: flex;
+  }
+
+  /* ********************Disaster**************** */
+  .Disaster {
+    margin: 4rem auto;
+  }
+  .DisasterHeader {
+    font-size: 2.8rem;
+  }
+  .DisasterParagraph {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  .DisasterBtn {
+    font-size: 2.2rem;
+    padding: 1.4rem 3rem;
+  }
+  .Disaster {
+    grid-template-rows: 16rem 18rem 18rem;
+    margin: 2rem auto;
+  }
+  /* ******************PeopleSolution**************** */
+  .PeopleSolution {
+    margin: 6rem auto;
+  }
+  #FigureDispaly2 {
+    display: none;
+  }
+
+  #FigureDispaly3 {
+    display: none;
+  }
+  .PeopleSolutionFigures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .PeopleSolutionHeader {
+    font-size: 2.4rem;
+  }
+  .PeopleImg {
+    height: 9rem;
+  }
+  .PeopleSolutionLi {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .PeopleSolutionBtn {
+    font-size: 2.2rem;
+    padding: 1.4rem 3rem;
+  }
+  /* ******************Footer**************** */
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  .FooterLogos {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .LogoBottom {
+    scale: 50%;
+  }
+  .SocialMediaIconLink {
+    scale: 70%;
+  }
+}
