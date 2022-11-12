@@ -7,7 +7,7 @@ for example if it is 1366px then we devide it to 16px:
 1366/16px=84.375  = 84
 then set @media (max-width:84em){}
 */
-
+/* ***************************************** */
 /**************************************/
 /* BELOW 1000px (Smaller desktops) */
 /**************************************/
