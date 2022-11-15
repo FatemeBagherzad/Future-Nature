@@ -8,15 +8,34 @@ for example if it is 1366px then we devide it to 16px:
 then set @media (max-width:84em){}
 */
 /* ***************************************** */
-/**************************************/
-/* BELOW 1000px (Smaller desktops) */
-/**************************************/
+
+/******************************************************/
+/* BELOW 1120px (Landscape Tablets) */
+/******************************************************/
+
+@media (max-width: 70rem) {
+  /* ******************News**************** */
+  .Newsfigures {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .SideWhatToDoNav img {
+    width: 15rem;
+  }
+  .HeroTxt {
+    grid-template-rows: 15rem 6rem 8rem;
+
+    padding-top: 10rem;
+  }
+}
+
+/******************************************************/
+/* BELOW 992px (Smaller desktops) */
+/******************************************************/
 
 @media (max-width: 62rem) {
-  /* ********************Hero**************** */
-  .Header {
-    margin-bottom: 6rem;
-  }
+  /* ************* Hero ************* */
 
   .NavList {
     font-size: 1.8rem;
@@ -24,22 +43,20 @@ then set @media (max-width:84em){}
   }
   .Btn {
     font-size: 1.8rem;
-    padding: 0.6rem;
-    margin-left: 2rem;
+  }
+  .YourIdeaBtn {
+    margin-left: 1rem;
   }
   .HeroTxtheader {
-    font-size: 4.8rem;
+    font-size: 4.6rem;
   }
   .HeroTxtLink {
     font-size: 2rem;
     font-weight: 600;
     padding: 1.4rem 3rem;
   }
-  .HeroTxt {
-    row-gap: 1rem;
-  }
 
-  /* ********************companies**************** */
+  /* ************* companies ************* */
   .CompaniesHeader {
     font-size: 1.8rem;
   }
@@ -54,67 +71,56 @@ then set @media (max-width:84em){}
     flex-wrap: wrap;
   }
 
-  /* ********************Disaster**************** */
+  /* ************* Disaster ************* */
   .Disaster {
     margin: 8rem auto;
   }
-  .DisasterHeader {
-    font-size: 2.8rem;
-  }
-  .DisasterParagraph {
-    font-size: 1.8rem;
-    line-height: 1.4;
-  }
-  .DisasterBtn {
-    font-size: 2.2rem;
-    padding: 1.4rem 3rem;
-  }
 
-  /* ******************PeopleSolution**************** */
+  /* ************* PeopleSolution ************* */
   .PeopleSolution {
     margin: 12rem auto;
   }
-  .PeopleSolutionFigures {
+  .Figures {
     grid-template-columns: 1fr 1fr;
   }
   #FigureDispaly3 {
     display: none;
   }
-  .PeopleSolutionHeader {
-    font-size: 3rem;
-  }
   .PeopleImg {
     height: 9rem;
   }
-  .PeopleSolutionLi {
+  .FigureLi {
     font-size: 1.8rem;
     line-height: 1.5;
   }
-  .PeopleSolutionBtn {
-    font-size: 2.2rem;
-    padding: 1.5rem 3rem;
-  }
+
   /* ******************Footer**************** */
   .Footer {
     font-size: 1.4rem;
   }
+
+  /* ******************CTA**************** */
   .Cta {
     display: grid;
     grid-template-columns: 1fr;
   }
 }
 
-/**************************************/
-/* BELOW 850px (Landscape Tablets) */
-/**************************************/
+/******************************************************/
+/* BELOW 848px (Landscape Tablets) */
+/******************************************************/
 @media (max-width: 53rem) {
   html {
     font-size: 50%;
   }
+  .logo {
+    width: 15rem;
+  }
+
+  /* ******************CTA**************** */
   .CtaForm {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 3.2rem;
     row-gap: 2.4rem;
   }
   .FullName {
@@ -132,33 +138,28 @@ then set @media (max-width:84em){}
   .FormBtn {
     grid-column: 1;
     grid-row: 4;
-    color: #a4e8e0;
-    background-color: #0a5048;
-    border-radius: 0.8rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 1.6rem 3.2rem;
-    margin: auto auto;
   }
 }
 
-/*******************************************/
-/* BELOW 700px (Phones & Smaller tablets) */
-/*******************************************/
-@media (max-width: 43rem) {
+/******************************************************/
+/* BELOW 720px (Phones & Smaller tablets) */
+/******************************************************/
+@media (max-width: 45rem) {
   html {
     font-size: 45%;
   }
-  /* ********************Hero**************** */
+  /* ********************NAV**************** */
   #dropdownPart {
     display: flex;
     position: absolute;
     top: 5rem;
     right: 5rem;
   }
-
+  .logo {
+    width: 13rem;
+  }
   .NavList {
-    position: absolute;
+    /* position: absolute;
     background-color: aliceblue;
     flex-direction: column;
     justify-content: center;
@@ -167,21 +168,23 @@ then set @media (max-width:84em){}
     top: 0;
     left: 0;
     color: #214250;
-    font-size: 2.4rem;
+    font-size: 2.4rem; */
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
   }
+  /* ********************Hero**************** */
 
   .HeroTxt {
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: 15rem 6rem 12rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13rem 6rem 9rem;
     column-gap: 0;
-    row-gap: 4rem;
+    row-gap: 2rem;
+    padding-top: 10rem;
   }
   .HeroTxtheader {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
   }
 
   /* ********************companies**************** */
@@ -189,33 +192,30 @@ then set @media (max-width:84em){}
   .CompaniesHeader {
     display: none;
   }
-  .CompaniesLogos {
-    align-items: center;
-    justify-items: space-between;
-    justify-content: center;
-    gap: 4rem;
-    flex-wrap: wrap;
-  }
+
   .Companies {
     margin: 4rem auto;
     display: flex;
   }
-
+  .CompaniesLogos {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: auto;
+  }
   /* ********************Disaster**************** */
   .Disaster {
     margin: 4rem auto;
   }
-  .DisasterHeader {
+  .Disaster h2 {
     font-size: 2.8rem;
   }
-  .DisasterParagraph {
+  .Disaster P {
     font-size: 1.8rem;
     line-height: 1.4;
   }
-  .DisasterBtn {
-    font-size: 2.2rem;
-    padding: 1.4rem 3rem;
-  }
+
   .Disaster {
     grid-template-rows: 16rem 18rem 18rem;
     margin: 2rem auto;
@@ -231,7 +231,7 @@ then set @media (max-width:84em){}
   #FigureDispaly3 {
     display: none;
   }
-  .PeopleSolutionFigures {
+  .Figures {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,29 +243,71 @@ then set @media (max-width:84em){}
   .PeopleImg {
     height: 9rem;
   }
-  .PeopleSolutionLi {
+  .FigureLi {
     font-size: 1.8rem;
     line-height: 1.5;
   }
-  .PeopleSolutionBtn {
-    font-size: 2.2rem;
-    padding: 1.4rem 3rem;
-  }
+
   /* ******************Footer**************** */
   .Footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 3rem;
     font-size: 1.5rem;
+    position: relative;
+    margin-top: 15rem;
   }
   .FooterLogos {
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    margin: 0.1rem auto;
+    position: absolute;
+    top: -3rem;
+    margin-left: calc(50% - 78.56px);
+    border: 2px solid #a4e8e0;
+  }
+  /* .logoBottom {
+    border-top: 1px solid #888;
+  } */
+  .FooterWebLinks {
+    justify-self: center;
+    margin-top: 6rem;
+  }
+  .FooterWebLinks ul,
+  .Connect ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6;
   }
   .LogoBottom {
     scale: 50%;
   }
   .SocialMediaIconLink {
     scale: 70%;
+  }
+  .Newsfigures {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .SideWhatToDoNav img {
+    width: 12rem;
+  }
+  .SideWhatToDoNav {
+    gap: 2rem;
+    margin-top: 10rem;
+    padding: 10rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .WhatToDoGrid .OtherSection {
+    padding: 10rem 2rem;
+  }
+  .UplodedIdeaSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 1rem;
   }
 }

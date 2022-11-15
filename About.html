@@ -16,56 +16,28 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <title>Future Nature</title>
   </head>
 
   <body>
-    <header class="container">
-      <nav class="Header container">
-        <div>
-          <a href="www.FutureNature.com"
-            ><img
-              class="logo"
-              alt="ُThe Planet Earth"
-              src="img/Logo.png"
-              width="80rem"
-          /></a>
-        </div>
+    <!--Navigation bar-->
+    <div>
+      <div id="nav-placeholder"></div>
 
-        <div class="NavMenu NavMenuBorder">
-          <ul class="NavList">
-            <li><a class="NavLink AllLinks" href="index.html">Home</a></li>
-            <li>
-              <a class="NavLink AllLinks" href="WhatToDo.html">What to do</a>
-            </li>
-            <li>
-              <a class="NavLink AllLinks" href="index.html#Disaster"
-                >Disaster explained</a
-              >
-            </li>
-            <li><a class="NavLink AllLinks" href="#Connect">Connect</a></li>
-            <li>
-              <a href="PeopleIdea.html" class="Btn AllLinks">your idea</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="dropdown" id="dropdownPart">
-          <button onclick="myFunction()" class="dropbtn">Menu</button>
-          <div id="myDropdown" class="dropdown-content">
-            <a class="NavLink AllLinks" href="About.html">About</a>
-            <a class="NavLink AllLinks" href="WhatToDo.html">What to do</a>
-            <a class="NavLink AllLinks" href="#Disaster">Disaster explained</a>
-            <a class="NavLink AllLinks" href="#Connect">Connect</a>
-            <a href="PeopleIdea.html" class="Btn AllLinks">your idea</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </div>
+    <!--end of Navigation bar-->
 
     <section class="OtherSection container">
-      <h2 class="OtherSectionHeader">Is climate change caused by humans?</h2>
-      <p class="OtherSectionParagraph">
+      <h2 class="SectionHeader">Is climate change caused by humans?</h2>
+      <hr class="hr" />
+      <p class="SectionParagraph">
         Over 97% of scientist agree that humans cause climate change. Humanity’s
         accelerated burning of fossil fuels and deforestation (forests are key
         parts of the planet’s natural carbon management systems) have led to
@@ -83,97 +55,20 @@
         warming in the coming decades is expected to be 250 times greater than
         the average warming during the past century.
       </p>
-      <a href="index.html" class="BackHomeBtn AllLinks">Back to home page</a>
+      <a href="index.html" class="MarginBtn Btn AllLinks">Back to home page</a>
     </section>
 
-    <footer class="FooterBack">
-      <div class="container Footer">
-        <div class="FooterLogos">
-          <div class="Logo LogoBottom">
-            <img
-              class="logo"
-              alt="ُThe Planet Earth"
-              src="img/Logo.png"
-              width="100rem"
-            />
-          </div>
+    <!--Footer-->
+    <div>
+      <div id="Footer-placeholder"></div>
 
-          <div class="SocilalMedia">
-            <a
-              href="https://www.facebook.com/"
-              class="SocialMediaIconLink IconLinks"
-              ><img
-                src="img/Multimedia/Facebook.png"
-                alt="Facebook Icon"
-                width="50px"
-                class="SocialMediaIcon"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              class="SocialMediaIconLink IconLinks"
-              ><img
-                src="img/Multimedia/instageram.png"
-                alt="Facebook Icon"
-                width="50px"
-                class="SocialMediaIcon"
-            /></a>
-            <a
-              href="https://twitter.com/?lang=en"
-              class="SocialMediaIconLink IconLinks"
-              ><img
-                src="img/Multimedia/twitter.png"
-                alt="Facebook Icon"
-                width="50px"
-                class="SocialMediaIcon"
-            /></a>
-          </div>
-        </div>
-        <div class="FooterWebLinks">
-          <ul class="FooterWebLinks">
-            <li class="FooterWebLinkHeader AllLinks"><h3>Resources</h3></li>
-            <li class="FooterWebLink AllLinks">
-              <a href="https://www.ipcc.ch/">https://www.ipcc.ch/</a>
-            </li>
-            <li class="FooterWebLink AllLinks">
-              <a href="https://www.un.org/en/climatechange/"
-                >https://www.un.org/en/climatechange/</a
-              >
-            </li>
-            <li class="FooterWebLink AllLinks">
-              <a href="https://ncar.ucar.edu/">https://ncar.ucar.edu/</a>
-            </li>
-            <li class="FooterWebLink AllLinks">
-              <a href="https://www.ncei.noaa.gov/"
-                >https://www.ncei.noaa.gov/</a
-              >
-            </li>
-            <li class="FooterWebLink AllLinks">
-              <a href="https://skepticalscience.com/"
-                >https://skepticalscience.com/</a
-              >
-            </li>
-            <li class="FooterWebLink AllLinks">
-              <a href="https://www.c2es.org/">https://www.c2es.org/</a>
-            </li>
-            <li class="FooterWebLink AllLinks">
-              <a href="https://www.globalchange.gov/"
-                >https://www.globalchange.gov/</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="Connect" id="Connect">
-          <ul class="Connect">
-            <li class="ConnectList"><h3>Connect</h3></li>
-            <li class="ConnectList">95 Brian Dr, North York, ON M2J 3Y6</li>
-            <li class="ConnectList">+1-647-292-3333</li>
-            <li class="ConnectList">Fa.Bagherzad@gmail.com</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+      <script>
+        $(function () {
+          $("#Footer-placeholder").load("footer.html");
+        });
+      </script>
+    </div>
+    <!--Footer End-->
 
     <script>
       /* When the user clicks on the button, 

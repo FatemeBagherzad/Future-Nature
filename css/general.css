@@ -80,6 +80,7 @@ body {
   font-weight: 400;
   color: #555;
   overflow-x: hidden;
+  transition: all 0.3s;
 }
 ul,
 a {
@@ -93,6 +94,36 @@ a {
   max-width: 130rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+.Newscontainer {
+  max-width: 140rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.Btn {
+  padding: 1.2rem 2.4rem;
+  background-color: #a4e8e0;
+  color: #0a5048;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.MarginBtn {
+  margin: auto auto;
+}
+
+.BtnBig:link,
+.BtnBig:visited {
+  background-color: #e1c340;
+  color: #0a5048;
+  transition: all 0.5s;
+}
+.BtnBig:hover,
+.BtnBig:active {
+  background-color: #0a5048;
+  color: #fff;
+  transition: all 0.5s;
 }
 
 .AllLinks:link,
@@ -115,4 +146,213 @@ a {
   /* background-color: #555;
   border-radius: 50%; */
   padding: 0.5rem;
+}
+
+.SectionHeader {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #0a5048;
+}
+.SectionParagraph {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #0a5048;
+}
+.SectionHeader2 {
+  font-size: 2.4rem;
+}
+.hr {
+  height: 1rem;
+  background-color: #e1c340;
+  color: #e1c340;
+  width: 100%;
+}
+
+/* *********************nav.html************************ */
+/*****************************************/
+/* Menu Navigation*/
+/****************************************/
+.Header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  margin-bottom: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  background-color: #a4e8e0;
+  color: #0a5048;
+  z-index: 999 !important;
+}
+.NavList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.NavMenu {
+  display: flex;
+}
+.YourIdeaBtn {
+  margin-left: 4.8rem;
+  /* border: 1px solid #0a5048; */
+  background-color: #e1c340;
+  box-shadow: 2px 1px #0a5048;
+}
+
+/**************************/
+/* Home Button, Top Botton */
+/**************************/
+#HomeButton {
+  position: fixed;
+  bottom: 3rem;
+  right: 5rem;
+}
+#TopButton {
+  position: fixed;
+  bottom: 10vh;
+  left: 65vw;
+}
+.HomeButton {
+  background-color: #a4e8e0;
+}
+.TopButton {
+  background-color: rgba(228, 228, 228, 0.422);
+}
+
+.HomeButton,
+.TopButton {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.HomeButtonLink,
+.TopButton {
+  border-radius: 50%;
+  padding: 0.3rem;
+  position: absolute;
+}
+
+/**************************/
+/* Dropdown Button  */
+/**************************/
+#dropdownPart {
+  display: none;
+}
+
+.dropdown {
+  z-index: 999;
+}
+.dropbtn {
+  cursor: pointer;
+  font-size: 2.4rem;
+  font-weight: 600;
+  right: 0rem;
+  top: 0.5rem;
+  background-color: #a4e8e0;
+  border: none;
+  padding: 0.5rem 5rem 0.5rem 0.5rem;
+  position: fixed;
+  color: #0a5048;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #a4e8e0;
+}
+
+.dropdown-content {
+  width: 50vw;
+  height: 50vh;
+  margin-top: 10rem;
+  display: none;
+  /* position: absolute; */
+  font-size: 2.8rem;
+  background-color: rgb(241, 241, 241, 1);
+  box-shadow: 0px 1rem 2rem 0px rgba(62, 62, 62, 0.2);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: #214250;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  /* display: flex; */
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+/* *********************nav.html************************  */
+
+/***********************************/
+/* Footer */
+/**********************************/
+
+.FooterBack {
+  background-color: #a4e8e0;
+}
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: 1;
+  justify-items: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3.5rem;
+  padding: 3.2rem 2.5rem;
+  color: #0a5048;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.FooterLogos {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  justify-self: start;
+  align-self: start;
+}
+.SocilalMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1;
+  border-top: 0.5px solid #888;
+  padding-top: 0.2rem;
+}
+.SocialMediaIcon {
+  filter: brightness(0);
+  opacity: 30%;
+}
+
+.FooterWebLinks {
+  grid-column: 3/4;
+}
+
+.Connect {
+  grid-column: 4/5;
+  list-style: none;
+}
+
+.ConnectList,
+.FooterWebLink {
+  margin: 0.5rem 0.5rem;
 }

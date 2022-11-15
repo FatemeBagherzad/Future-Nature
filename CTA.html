@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>Future Nature</title>
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div>
+      <div id="nav-placeholder"></div>
+
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </div>
+    <!--end of Navigation bar-->
+
+    <section class="SectionCta" id="Cta">
+      <div class="container">
+        <div class="Cta">
+          <div class="CtaTxtBox">
+            <h2 class="CtaHeading">Share your solution to climate change:</h2>
+            <p class="CtaParagraph">
+              As climate change is hampering the lives and resources of our
+              earth, we need to look out for extreme measures to prevent climate
+              change. Now, what can we do to prevent this? Is it possible for
+              all of us to join and preserve nature?
+            </p>
+
+            <form class="CtaForm" name="ShareYourThought">
+              <div class="FullName">
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  name="full-name"
+                  required
+                />
+              </div>
+
+              <div class="Email">
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="Ideas">
+                <label for="Solutions">Write your Opinion here:</label>
+                <textarea
+                  rows="10"
+                  cols="100%"
+                  name="text"
+                  placeholder="Enter text"
+                  required
+                ></textarea>
+                <br />
+              </div>
+
+              <a class="MarginBtn Btn FormBtn AllLinks" href="#">Submit</a>
+            </form>
+          </div>
+          <div
+            class="CtaImgBox"
+            role="img"
+            aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Search" id="Search">
+      <div class="container">
+        <div class="SearchArea">
+          <div class="UplodedIdeaSection">
+            <div class="UplodedIdeas">
+              <img src="img/people/person1.jpg" alt="Person Photo" />
+              <img src="img/people/person2.jpg" alt="Person Photo" />
+              <img src="img/people/person3.jpg" alt="Person Photo" />
+              <img src="img/people/person4.jpg" alt="Person Photo" />
+              <img src="img/people/person5.jpg" alt="Person Photo" />
+              <img src="img/people/person6.jpg" alt="Person Photo" />
+            </div>
+            <p class="UploadedIdeaParagraph">
+              Read more than<span>250,000+</span> People's Idea here!
+            </p>
+          </div>
+
+          <div class="SearchOther">
+            <form action="">
+              <input
+                type="text"
+                placeholder="Search a name or keyword"
+                name="Search"
+              />
+            </form>
+          </div>
+          <a class="MarginBtn Btn AllLinks" href="#">Submit</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <div>
+      <div id="Footer-placeholder"></div>
+
+      <script>
+        $(function () {
+          $("#Footer-placeholder").load("footer.html");
+        });
+      </script>
+    </div>
+    <!--Footer End-->
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
