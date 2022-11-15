@@ -57,3 +57,26 @@
     </div>
   </div>
 </nav>
+
+<!-- *************************************************** 
+I did this to not reapeat
+navigation and footer in every page and itworked, but if i clicked on index.html
+itself to open the website, chrome would block it. so I had to change it and use
+them in every single page again.
+this here just for remining me of how i did it.
+copied from this website:
+https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages
+***************************************************** -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+Then in the body tag, a container is made with an unique id and a javascript
+block to load the nav.html into the container, as follows:
+
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+
+<script>
+  $(function () {
+    $("#nav-placeholder").load("nav.html");
+  });
+</script>
+<!--end of Navigation bar-->

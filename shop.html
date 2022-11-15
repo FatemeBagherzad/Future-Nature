@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=
+      Lato:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@500&family=Rubik:
+      ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:
+      wght@200&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Playfair+Display:
+      wght@400;500;600&family=Poppins:wght@500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Future Nature</title>
+  </head>
+
+  <body>
+    <nav class="Header">
+      <div>
+        <a href="index.html"
+          ><img
+            class="logo"
+            alt="ُThe Planet Earth"
+            src="img/Logo.png"
+            width="120rem"
+        /></a>
+      </div>
+
+      <div class="NavMenu">
+        <ul class="NavList">
+          <li>
+            <a class="NavLink AllLinks" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="NavLink AllLinks" href="shop.html">Shop</a>
+          </li>
+          <li>
+            <a class="NavLink AllLinks" href="news.html">News</a>
+          </li>
+          <li>
+            <a class="NavLink AllLinks" href="WhatToDo.html">What to do</a>
+          </li>
+          <li><a class="NavLink AllLinks" href="About.html">About</a></li>
+          <li>
+            <a href="CTA.html" class="Btn YourIdeaBtn AllLinks">your idea</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="HomeButton" class="HomeButtonLink">
+        <a href="index.html"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#214250"
+            class="HomeButton"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="dropdown" id="dropdownPart">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="NavLink AllLinks" href="index.html">Home</a>
+          <a class="NavLink AllLinks" href="shop.html">Shop</a>
+          <a class="NavLink AllLinks" href="news.html">News</a>
+          <a class="NavLink AllLinks" href="WhatToDo.html">What to do</a>
+          <a class="NavLink AllLinks" href="About.html">About</a>
+          <a href="CTA.html" class="Btn YourIdeaBtn AllLinks">your idea</a>
+          <div class="dropdown-content2">
+            <a class="NavLink AllLinks" href="shop.html">Browse Products</a>
+            <a class="NavLink AllLinks" href="shop.html">Order Online</a>
+            <a class="NavLink AllLinks" href="shop.html">Recipes</a>
+            <a class="NavLink AllLinks" href="shop.html">Weekly Sales</a>
+            <a class="NavLink AllLinks" href="shop.html">Find a Store</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="Header2">
+      <div class="NavMenu">
+        <div class="Login">
+          <a href="#" class="Btn YourIdeaBtn AllLinks">Login</a>
+        </div>
+
+        <div class="SearchShop">
+          <form action="">
+            <input type="text" placeholder="Search" name="Search" />
+          </form>
+        </div>
+
+        <ul class="NavList">
+          <li>
+            <a class="NavLink AllLinks" href="shop.html">Browse Products</a>
+          </li>
+          <li>
+            <a class="NavLink AllLinks" href="shop.html">Order Online</a>
+          </li>
+          <li>
+            <a class="NavLink AllLinks" href="shop.html">Recipes</a>
+          </li>
+          <li>
+            <a class="NavLink AllLinks" href="shop.html">Weekly Sales</a>
+          </li>
+          <li>
+            <a class="NavLink AllLinks" href="shop.html">Find a Store</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="HomeButton" class="HomeButtonLink">
+        <a href="index.html"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#214250"
+            class="HomeButton"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="dropdown" id="dropdownPart">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="NavLink AllLinks" href="index.html">Home</a>
+          <a class="NavLink AllLinks" href="news.html">News</a>
+          <a class="NavLink AllLinks" href="WhatToDo.html">What to do</a>
+          <a class="NavLink AllLinks" href="About.html">About</a>
+          <a href="CTA.html" class="Btn YourIdeaBtn AllLinks">your idea</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container" id="Section1">
+      <div class="ShopSection1 ShopSection1Grid">
+        <div class="ShopSectionIntro">
+          <h1>Reserve Your Thanksgiving Meal Today</h1>
+          <p class="SectionParagraph">
+            Wow the crowd this year with elegant and easy Thanksgiving meals,
+            apps, sides and more that rise to the occasion and our standards.
+            Order online now and pick up in-store before the feast.
+          </p>
+          <a href="shop.html" class="AllLinks">Order now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="Section2">
+      <div class="ShopSection2">
+        <a href="#" class="Btn AllLinks">Order holiday meals</a>
+        <a href="#" class="Btn AllLinks">Get delivery & pickup</a>
+        <a href="#" class="Btn AllLinks">See weekly sales</a>
+        <a href="#" class="Btn AllLinks">Browse 365 brand</a>
+      </div>
+    </section>
+
+    <section Id="scrollSection" class="scrollSectionFlow">
+      <div class="scrollSection">
+        <figure class="scrollSectionfigure">
+          <img src="img/shop/s1.png" alt="Fruit image" class="Fruitimage" />
+          <figcaption>Fruit Baskets</figcaption>
+        </figure>
+        <figure class="scrollSectionfigure">
+          <img src="img/shop/s2.png" alt="Fruit image" class="Fruitimage" />
+          <figcaption>Organic Apples</figcaption>
+        </figure>
+        <figure class="scrollSectionfigure">
+          <img src="img/shop/s3.png" alt="Fruit image" class="Fruitimage" />
+          <figcaption>Organic Pears</figcaption>
+        </figure>
+        <figure class="scrollSectionfigure">
+          <img src="img/shop/s4.png" alt="Fruit image" class="Fruitimage" />
+          <figcaption>Organic Cherries</figcaption>
+        </figure>
+        <figure class="scrollSectionfigure">
+          <img src="img/shop/s5.png" alt="Fruit image" class="Fruitimage" />
+          <figcaption>Organic Peaches</figcaption>
+        </figure>
+        <figure class="scrollSectionfigure">
+          <img src="img/shop/s6.png" alt="Fruit image" class="Fruitimage" />
+          <figcaption>Organic Watermelon</figcaption>
+        </figure>
+        <figure class="scrollSectionfigure">
+          <img src="img/shop/s7.png" alt="Fruit image" class="Fruitimage" />
+          <figcaption>Organic Bananas</figcaption>
+        </figure>
+        <figure class="scrollSectionfigure">
+          <img src="img/shop/s8.png" alt="Fruit image" class="Fruitimage" />
+          <figcaption>Organic Pomegranet</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container" id="Section3">
+      <div class="ShopSection3 ShopSection1Grid">
+        <div class="ShopSectionIntro">
+          <h1>Organic Spices, $9.49 lb.</h1>
+          <p class="SectionParagraph">
+            Prime members: Cash in on this Thanksgiving deal 11/2 – 12/31. Or go
+            for Organic Spices packages $1.49 lb and bring a banquet-worthy
+            healthy dinner to the table
+          </p>
+          <a href="shop.html" class="AllLinks">See more sales</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="FooterBack">
+      <div class="container Footer">
+        <div class="FooterLogos">
+          <div class="Logo">
+            <img
+              class="logo logoBottom"
+              alt="ُThe Planet Earth"
+              src="img/Logo.png"
+              width="120rem"
+            />
+          </div>
+
+          <div class="SocilalMedia">
+            <a
+              href="https://www.facebook.com/"
+              class="SocialMediaIconLink IconLinks"
+              target="_blank"
+              ><img
+                src="img/Multimedia/Facebook.png"
+                alt="Facebook Icon"
+                width="30px"
+                class="SocialMediaIcon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              class="SocialMediaIconLink IconLinks"
+              target="_blank"
+              ><img
+                src="img/Multimedia/instageram.png"
+                alt="Facebook Icon"
+                width="30px"
+                class="SocialMediaIcon"
+            /></a>
+            <a
+              href="https://twitter.com/?lang=en"
+              class="SocialMediaIconLink IconLinks"
+              target="_blank"
+              ><img
+                src="img/Multimedia/twitter.png"
+                alt="Facebook Icon"
+                width="30px"
+                class="SocialMediaIcon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="FooterWebLinks">
+          <ul>
+            <li class="FooterWebLinkHeader AllLinks"><h3>Resources</h3></li>
+            <li class="FooterWebLink AllLinks">
+              <a href="https://www.un.org/en/climatechange/" target="_blank"
+                >https://www.un.org/en/climatechange/</a
+              >
+            </li>
+            <li class="FooterWebLink AllLinks">
+              <a href="https://www.ipcc.ch/" target="_blank"
+                >https://www.ipcc.ch/</a
+              >
+            </li>
+            <li class="FooterWebLink AllLinks">
+              <a href="https://ncar.ucar.edu/" target="_blank"
+                >https://ncar.ucar.edu/</a
+              >
+            </li>
+            <li class="FooterWebLink AllLinks">
+              <a href="https://www.ncei.noaa.gov/" target="_blank"
+                >https://www.ncei.noaa.gov/</a
+              >
+            </li>
+            <li class="FooterWebLink AllLinks">
+              <a href="https://skepticalscience.com/" target="_blank"
+                >https://skepticalscience.com/</a
+              >
+            </li>
+            <li class="FooterWebLink AllLinks">
+              <a href="https://www.c2es.org/" target="_blank"
+                >https://www.c2es.org/</a
+              >
+            </li>
+            <li class="FooterWebLink AllLinks">
+              <a href="https://www.globalchange.gov/" target="_blank"
+                >https://www.globalchange.gov/</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="Connect" id="Connect">
+          <ul>
+            <li class="ConnectList"><h3>Connect</h3></li>
+            <li class="ConnectList">95 Brian Dr, North York, ON M2J 3Y6</li>
+            <li class="ConnectList">+1-647-292-3333</li>
+            <li class="ConnectList">Fa.Bagherzad@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
