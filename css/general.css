@@ -121,8 +121,8 @@ a {
 }
 .BtnBig:hover,
 .BtnBig:active {
-  background-color: #0a5048;
-  color: #fff;
+  background-color: #373737;
+  color: #fdf2e9;
   transition: all 0.5s;
 }
 
