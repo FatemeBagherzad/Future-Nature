@@ -1,4 +1,4 @@
-# My First HTML & CSS Project
+# Future Nature - My First HTML & CSS Project
 
 ## Project Overview
 
@@ -7,6 +7,17 @@ This is my very first project where I practiced using HTML and CSS to create a b
 ## Live Demo
 
 You can view the live version of the project here: [Live Demo on Netlify](https://fateme-future-nature.netlify.app)
+
+## Screenshot
+
+Here is some preview of the website:
+
+![future nature Screenshot1](screenshots/1.jpg)
+![future nature Screenshot2](screenshots/2.jpg)
+![future nature Screenshot3](screenshots/3.jpg)
+![future nature Screenshot4](screenshots/4.jpg)
+![future nature Screenshot5](screenshots/5.jpg)
+![future nature Screenshot6](screenshots/6.jpg)
 
 ## Features
 
@@ -30,17 +41,6 @@ You can view the live version of the project here: [Live Demo on Netlify](https:
    cd Future-Nature
    ```
 3. Open the `index.html` file in your preferred web browser.
-
-## Screenshot
-
-Here is some preview of the website:
-
-![future nature Screenshot1](screenshots/1.jpg)
-![future nature Screenshot2](screenshots/2.jpg)
-![future nature Screenshot3](screenshots/3.jpg)
-![future nature Screenshot4](screenshots/4.jpg)
-![future nature Screenshot5](screenshots/5.jpg)
-![future nature Screenshot6](screenshots/6.jpg)
 
 ## What I Learned
 
