@@ -42,8 +42,6 @@ Here is some preview of the website:
 ![future nature Screenshot5](screenshots/5.jpg)
 ![future nature Screenshot6](screenshots/6.jpg)
 
-> Make sure to place your screenshot in an `images` folder within the project and name it `screenshot.png`. Adjust the path if needed.
-
 ## What I Learned
 
 - How to structure a basic webpage using semantic HTML elements.
