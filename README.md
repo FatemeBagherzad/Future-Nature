@@ -27,7 +27,7 @@ You can view the live version of the project here: [Live Demo on Netlify](https:
    ```
 2. Navigate into the project directory:
    ```bash
-   cd your-repo-name
+   cd Future-Nature
    ```
 3. Open the `index.html` file in your preferred web browser.
 
@@ -62,3 +62,4 @@ If you have suggestions or improvements for this project, feel free to create an
 
 - **Email**: fa.bagherzad@gmail.com
 - **GitHub**: [Fateme Bagherzad](https://github.com/FatemeBagherzad)
+- **Linkedin**: [Fateme Bagherzad](https://www.linkedin.com/in/fatemeh-bagherzad/)
