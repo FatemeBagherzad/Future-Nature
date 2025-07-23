@@ -172,20 +172,27 @@ a {
 /*****************************************/
 /* Menu Navigation*/
 /****************************************/
+.HeaderBack {
+  z-index: 999 !important;
+  background-color: #a4e8e0;
+  padding: 1.6rem 3.2rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  color: #0a5048;
+}
 .Header {
   display: flex;
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 3.2rem;
-  margin-bottom: 2rem;
   top: 0;
   left: 0;
   right: 0;
   height: 5rem;
-  background-color: #a4e8e0;
-  color: #0a5048;
-  z-index: 999 !important;
 }
 
 .NavList {
