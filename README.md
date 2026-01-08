@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is my very first project where I practiced using HTML and CSS to create a basic web page. The project is designed to help me understand the fundamentals of web development, including structuring content with HTML and styling it with CSS.
+This is my first project built with HTML and CSS, focused on creating a basic web page while developing a solid understanding of web development fundamentals, including content structure and visual styling.
 
 ## Live Demo
 
