@@ -1,4 +1,4 @@
-# Future Nature - My First HTML & CSS Project
+# Future Nature - HTML & CSS Project
 
 ## Project Overview
 
